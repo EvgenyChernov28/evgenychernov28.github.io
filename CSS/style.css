@@ -1,0 +1,345 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: "Kereru-Bold";
+    src: url("//db.onlinewebfonts.com/t/4642748c8c6b7a22961a7182dd8cbdc7.eot");
+    src: url("//db.onlinewebfonts.com/t/4642748c8c6b7a22961a7182dd8cbdc7.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/4642748c8c6b7a22961a7182dd8cbdc7.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/4642748c8c6b7a22961a7182dd8cbdc7.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/4642748c8c6b7a22961a7182dd8cbdc7.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/4642748c8c6b7a22961a7182dd8cbdc7.svg#Kereru-Bold") format("svg");
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+}
+.head-menu{
+    background: #dadad2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+.head-menuAll {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 8%;
+    margin-top: 10px;
+    list-style: none;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.logo{
+    margin-right: 10%;
+}
+
+.head-menuAll-li a{
+    text-decoration: none;
+    color: black;
+}
+.head-menuAll-li a:hover{
+    color: tomato;
+}
+
+.sub-menu-tours{
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    background-color: #dadad2;
+    margin-left: -40px;
+    list-style: none;
+    line-height: 33px;
+    transition: 0.8s ease-in-out;
+    color: black;
+
+}
+.head-menu .sub-menu-tours{
+    visibility: hidden;
+}
+.head-menuAll-li:hover .sub-menu-tours{
+    visibility: visible;
+}
+
+.sub-menu-tours-li a{
+    padding: 8px 10px 8px 10px;
+    display: block;
+}
+.sub-menu-tours a:hover{
+    background: #a70202;
+    color: #ffffff;
+}
+.book {
+    padding: 15px 27px 14px 23px;
+    background-color: #a70202;
+    color: white;
+    font-family: 'Kereru-Bold';
+    transition: 0.5s;
+}
+.book:hover{
+    background: tomato;
+}
+
+
+.ytplayer {
+    pointer-events: none;
+    margin-left: 0px;
+    margin-top: -4px;
+}
+
+.ring-text{
+    display: flex;
+    padding: 0px 20% 20px 20%;
+    align-items: center;
+}
+.description-all{
+    margin-left: 50px;
+}
+.description-head{
+    font-family: 'Kereru-Bold';
+    font-size: 40px;
+    margin-top: 66px;
+}
+.description-p1{
+    margin-top: 10px;
+    font: bold italic 15px sans-serif;
+    line-height: 20px;
+}
+.description-p2{
+    margin-top: 15px;
+    font: normal 15px sans-serif;
+    line-height: 20px;
+}
+.location{
+    background-image: url(../img/background-image.png);
+    background-size: 100%;
+}
+.white-swish{
+    margin-top: -12px;
+}
+/* .locate-head{
+
+} */
+.locate-head h1{
+    font-family: 'Kereru-Bold';
+    font-size: 44px;
+    text-align: center;
+}
+.locate-head p{
+    font: normal 18px sans-serif;
+    text-align: center;
+}
+.locate-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonleft{
+    background-image: url(../img/arrowleft30.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border-style: none;
+    margin-right: 20px;
+    background-color: transparent;
+}
+.buttonleft:hover{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/arrowleft30red.png);
+    cursor: pointer;
+}
+.buttonright{
+    background-image: url(../img/arrowright30.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    outline: none;
+    border-style: none;
+    margin-left: 20px;
+    background-color: transparent;
+}
+.buttonright:hover{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/arrowright30red.png);
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+.card h4{
+    text-align: center;
+    font: bold 29px 'Kereru-Bold';
+    margin-bottom: 10px;
+}
+.card p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 19px;
+}
+.card a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: black;
+    border-bottom: 4px solid #a70202;
+    padding: 8px 0 8px 0;
+    text-decoration: none;
+}
+.card a:hover{
+    border-top: 4px solid #a70202;
+    transition: 0.4s;
+}
+.locations-map-img{
+    position: relative;
+}
+
+.icons-head{
+    font-family: 'Kereru-Bold';
+    font-size: 50px;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 180px;
+    text-align: center;
+}
+.icons p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.OurTours-head h2{
+    font-family: 'Kereru-Bold';
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.OurTours-head p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.OurTours-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.OurTours-card{
+    width: 400px;
+    height: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 50px;
+    position: relative;
+}
+.OurTours-card-img{
+    overflow: hidden;
+}
+.OurTours-card-img img{
+    transition: transform 1.1s ease-in-out;
+
+}
+.OurTours-card h5{
+    font-family: 'Kereru-Bold';
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.OurTours-card p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 0.7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+.OurTours-card a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Kereru-Bold';
+    font-size: 30px;
+    font-weight: 900;
+    padding: 10px 20px 10px 20px;
+    background-color: #d40b0b;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.OurTours-card a:hover{
+    background-color: #a70202;
+}
+.OurTours-card-img img:hover{
+    transform: scale(1.2);
+}
+.OurTours-footer{
+    text-align: center;
+    margin-top: 40px;
+}
+.OurTours-footer a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: black;
+    border-bottom: 4px solid #a70202;
+    padding: 8px 0 8px 0;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+.OurTours-footer a:hover{
+    border-top: 4px solid #a70202;
+    transition: 0.4s;
+}
+
+
+.DealsSpecials{
+    margin-top: 10px;
+}
+.DealsSpecials img{
+    margin-top: 3px;
+    margin-bottom: -44px;
+    width: 100%;
+}
+.DealsSpecials-head{
+    font-family: 'Kereru-Bold';
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.DealsSpecials-back{
+    background-image: url(../img/background-image.png);
+    background-size: 100%;
+    margin-top: -50px;
+}
+.DealsSpecials-cards{
+    display: flex;
+    justify-content: space-around;
+}
